@@ -308,6 +308,10 @@ p {
   font-family: "Lato", sans-serif;
 }
 
+.about-stats {
+  padding-bottom: 5rem;
+}
+
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -327,14 +331,43 @@ p {
   transform: translateX(-50%);
 }
 
-.stacks #logo-container {
-  width: 40rem;
+.stacks #stack-container {
+  justify-items: center;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.5rem;
+  grid-gap: 2rem;
 }
-.stacks #logo-container .logo-stacks {
-  width: 7rem;
+.stacks #stack-container li {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  border: 3px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.stacks #stack-container .yel-stack {
+  background-color: rgba(210, 242, 24, 0.1);
+  border-color: #d8f218;
+  box-shadow: 5px 5px 20px 0px rgba(210, 242, 24, 0.75);
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(210, 242, 24, 0.75);
+  -moz-box-shadow: 5px 5px 20px 0px rgba(210, 242, 24, 0.75);
+}
+.stacks #stack-container .pink-stack {
+  background-color: rgba(230, 55, 216, 0.1);
+  border-color: #e637d8;
+  box-shadow: 5px 5px 20px 0px rgba(230, 55, 216, 0.75);
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(230, 55, 216, 0.75);
+  -moz-box-shadow: 5px 5px 20px 0px rgba(230, 55, 216, 0.75);
+}
+.stacks #stack-container .corail-stack {
+  background-color: rgba(247, 135, 135, 0.1);
+  border-color: #f78787;
+  box-shadow: 5px 5px 20px 0px rgba(247, 135, 135, 0.75);
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(247, 135, 135, 0.75);
+  -moz-box-shadow: 5px 5px 20px 0px rgba(247, 135, 135, 0.75);
 }
 
 /*Timeline*/
@@ -343,7 +376,6 @@ p {
   padding-left: 3rem;
   border-left: 1px solid var(--grey-1);
   text-align: justify;
-  width: 30rem;
 }
 .timeline .timeline-item p, .timeline .timeline-item li {
   font-family: "Lato", sans-serif;
