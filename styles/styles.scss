@@ -78,6 +78,27 @@ p {
     }
 }
 
+.yel-effect {
+    background-color: rgb(210 242 24 / 10%);
+    border-color: #d8f218;
+    box-shadow: 5px 5px 20px 0px rgb(210 242 24 / 75%);
+    -webkit-box-shadow: 5px 5px 20px 0px rgb(210 242 24 / 75%);
+    -moz-box-shadow: 5px 5px 20px 0px rgb(210 242 24 / 75%);
+}
+.pink-effect {
+    background-color: rgb(230 55 216/ 10%);
+    border-color: #e637d8;
+    box-shadow: 5px 5px 20px 0px rgba(230,55,216,0.75);
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(230,55,216,0.75);
+    -moz-box-shadow: 5px 5px 20px 0px rgba(230,55,216,0.75);
+}
+.corail-effect {
+    background-color: rgb(247 135 135/ 10%);
+    border-color: #f78787;
+    box-shadow: 5px 5px 20px 0px rgba(247,135,135,0.75);
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(247,135,135,0.75);
+    -moz-box-shadow: 5px 5px 20px 0px rgba(247,135,135,0.75);
+}
 // Menu
 .navbar {
     position: fixed;
@@ -92,7 +113,6 @@ p {
     .nav{
         padding: 1rem;
         cursor: pointer;
-        background-color: var(--color-grey-4);
         width: 55px;
         height: 55px;
         border-radius: 50%;
@@ -100,15 +120,17 @@ p {
         justify-content: center;
         align-items: center;
         margin: .7rem 0;
-        box-shadow: var(--box-shadow-1) ;
         i {
             font-size: 1.2rem;
-            color: var(--color-grey-2);
+            color: var(--text-primary-color);
             pointer-events: none;
+            &:hover {
+                color: var(--pink-2);
+            }
         }
     }
     .active-btn {
-        background-color: var(--color-secondary);
+        color: var(--pink-2);
         transition: all .4s ease-in-out;
         i { color: var(--color-white); }
     }
@@ -316,33 +338,11 @@ p {
             align-items: center;
             font-size: 1.5rem;            
         }
-        .yel-stack {
-            background-color: rgb(210 242 24 / 10%);
-            border-color: #d8f218;
-            box-shadow: 5px 5px 20px 0px rgb(210 242 24 / 75%);
-            -webkit-box-shadow: 5px 5px 20px 0px rgb(210 242 24 / 75%);
-            -moz-box-shadow: 5px 5px 20px 0px rgb(210 242 24 / 75%);
-        }
-        .pink-stack {
-            background-color: rgb(230 55 216/ 10%);
-            border-color: #e637d8;
-            box-shadow: 5px 5px 20px 0px rgba(230,55,216,0.75);
-            -webkit-box-shadow: 5px 5px 20px 0px rgba(230,55,216,0.75);
-            -moz-box-shadow: 5px 5px 20px 0px rgba(230,55,216,0.75);
-        }
-        .corail-stack {
-            background-color: rgb(247 135 135/ 10%);
-            border-color: #f78787;
-            box-shadow: 5px 5px 20px 0px rgba(247,135,135,0.75);
-            -webkit-box-shadow: 5px 5px 20px 0px rgba(247,135,135,0.75);
-            -moz-box-shadow: 5px 5px 20px 0px rgba(247,135,135,0.75);
-        }
     }
 }  
 
-/*Timeline*/
-.timeline {
-    .timeline-item {
+.training {
+    .training-item {
         position: relative;
         padding-left: 3rem;
         border-left: 1px solid var(--grey-1);
@@ -350,7 +350,7 @@ p {
         p, li {
             font-family: 'Lato', sans-serif;
         }
-        .tl-icon {
+        .train-icon {
             position: absolute;
             color: var(--pink-2);
             background-color: var(--text-primary-color);
@@ -552,12 +552,9 @@ p {
     margin-top: 3rem;
     .blog {
         position: relative;
-        background-color: var(--color-grey-5);
         border-radius: 5px;
-        box-shadow: 1px 1px 20px rgba(0,0,0,.1);
         transition: all .4s ease-in-out;
         &:hover {
-            box-shadow: 1px 1px 20px rgba(0,0,0,.3);
             transform: translateY(-5px);
             transition: all .4s ease-in-out;
             img {
@@ -569,7 +566,9 @@ p {
         img {
             width: 100%;
             height: 300px;
-            object-fit: cover;
+            // object-fit: cover;
+            background-color: #f6f6f6;
+            padding: 2rem;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             filter: grayscale(100%);
@@ -578,15 +577,17 @@ p {
         .blog-text {
             margin-top: -7px;
             padding: 1.1rem;
-            border-top: 8px solid var(--color-secondary);
+            border-top: 8px solid #858585;
             h4 {
-                font-size: 1.5rem;
-                margin-bottom: .7rem;
+                font-size: 1.8rem;
+                text-align: center;
+                margin: .7rem auto;
                 transition: all .4s ease-in-out;
                 cursor: pointer;
-                &:hover { color: var(--color-secondary); }
+                &:hover { color: var(--pink-1); }
             }
-            p{
+            p {
+                font-size: 1rem;
                 line-height: 2rem;
                 padding-bottom: 1rem;
             }
