@@ -14,11 +14,14 @@
             padding-right: 0rem !important;
             width: 90%;
             margin: 0 auto;
+            .ascali {
+                margin-left: -7rem;
+            }
             .btn-cta {
                 align-self: center;
             }
             .logo {
-                width: 230px;
+                width: 200px;
                 font-size: 2rem;
             }
             p {
@@ -27,12 +30,14 @@
         }
     }
      
-    .header-content .left-header .image #myPicture{
-        width: 200px;
-        height: 200px;
-        margin: 1rem auto !important;
-        position: inherit;
+    .header-content .left-header .image{
+        margin: 0 auto;
+        #myPicture{
+            width: 200px;
+            height: 200px; 
+        }
     }
+
     .header-content .right-header h2 {
         width: auto;
         font-size: 3rem;
@@ -241,12 +246,14 @@
             align-self: center;
         } 
     }
-    .header-content .left-header .image #myPicture{
-        width: 200px;
-        height: 200px;
-        margin: 1rem auto !important;
-        position: inherit;
+    .header-content .left-header .image{
+        margin: 0 auto;
+        #myPicture{
+            width: 200px;
+            height: 200px; 
+        }
     }
+       
     .header-content .right-header h2 {
         width: auto;
         font-size: 2rem;

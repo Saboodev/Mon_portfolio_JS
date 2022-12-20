@@ -29,22 +29,21 @@
                 <h2>Sabrina De Santis</h2>
                 <p>Développeuse web diplômée et rédactrice web en devenir</p>
                 <div class="btn-cta">
-                    <a target="_blank" href="../img/CV_Sabrina_DeSantis.pdf" rel="noopener noreferrer" class="animated-link">
+                    <a target="_blank" href="/Mon_portfolio_JS/img/CV_Sabrina_DeSantis.pdf" rel="noopener noreferrer" class="animated-link">
                         <div class="btn-del">Download CV</div>
                         <div class="btn-icon"><i class="fas fa-download"></i></div>
                     </a>
                 </div>
             </div>
-                <div class="animation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            
-            
+            <div class="animation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="blob"></div>
         </div>
     </header>
     <main>
@@ -246,8 +245,9 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="GET" class="contact-form">
+                        <form action="https://formsubmit.co/ascali_web@outlook.fr" method="POST">
                             <div class="input-control i-c-2">
+                                <input type="hidden" name="_subject" value="Nouvel email depuis ton portfolio!">
                                 <input type="text" required placeholder="Nom">
                                 <input type="email" required placeholder="Email">
                             </div>
@@ -256,13 +256,15 @@
                             </div>
                             <div class="input-control">
                                 <textarea name="" id="" cols="15" rows="8" placeholder="Votre message..."></textarea>
+                                <input type="file" name="attachment" accept="image/png, image/jpeg">
                             </div>
                             <div class="submit-btn">
                                 <a href="#" class="main-btn">
-                                    <input type="hidden" name="_next" value="/">
-                                    <input type="hidden" name="_template" value="box">
+                                    <input type="hidden" name="_next" value="https://saboodev.github.io/Mon_portfolio_JS/">
+                                    <input type="hidden" name="_template" value="basic">
                                     <button type="submit" value="submit" class="btn btn-primary animated-link">Envoyer</button>                                </a>
                             </div>
+                            
                         </form>
                     </div>
                 </div>
